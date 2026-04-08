@@ -1,0 +1,10 @@
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/dist.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/nestml_hh9_module_module.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/package.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/package_source.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/edit_cache.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/rebuild_cache.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/list_install_components.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/install.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/install/local.dir
+/home/atiyeh/Downloads/Biophysical-model-of-CPG-main/target/CMakeFiles/install/strip.dir

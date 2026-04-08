@@ -1,0 +1,64 @@
+delta_clock: .1 #Simulation time step (ms)
+seed: 8550026 #Use 0 for a random seed, Control seed: 2261520; Test seed: 8550026
+sim_time: 3000
+#Data analysis parameters
+PCA_components: 5
+calculate_balance: 0
+chop_edges_amount: 500
+convstd_rate: 200
+convstd_pca: 200
+downsampling_convolved: 0
+high_pass_filtered: false
+remove_mean: false
+save_results: 1
+smoothing_window: 150 #Ex. 50: 50*0.1=5ms time window
+sync_regularity: 0
+#Dopamine / gap junction parameters
+dopamine_enabled: 0
+dopamod_synapses: 0
+dopa_sensitivity_threshold: 10 #Hz
+phasic_dopa_peak: 10. #Healthy=10, Low dopa = 6
+tonic_dopa_rate: 5. #Hz Healthy=5, Low dopa = 3
+dopamine_sensitivity_d1: .01 #Healthy=0.01, Low dopa = 1.
+dopamine_sensitivity_d2: .01 #Healthy=0.01, Low dopa = 1.
+gap_weight: .01 #Healthy=0.01, Low dopa=1.
+sparsity_gj: .2 
+gap_connect_bursting: 0 #0=none;1=excitatory;2=inhibitory;3=excitatory and inhibitory to inh interneurons
+gap_connect_tonic: 0 #0=none;1=excitatory;2=inhibitory;3=excitatory and inhibitory  to inh interneurons
+gap_connect_inh_inter: 0 #0=none;1=inhibitory interneurons
+gap_connect_mnp: 0 #0=none;1=excitatory interneurons to motor neurons
+#Population parameters
+coupling: .6 #Original 0.6
+coupling_std: .12 #Original .12
+rg_pop_size: 100
+exc_pct_tonic: 0.7 #Control 0.7
+inh_pct_tonic: 0.7 #Control 0.7
+inh_inter_pop_size: 100
+exc_inter_pct_tonic: 0.8
+mn_pop_size: 80
+exc_inter_pop_size: 80
+input_bias_tonic: 1000. # original value is 32o, I changed to 1000
+input_bias_bursting: 800. # original value is 160, i changed it to 800
+noise_amplitude_tonic: 320. #Current mean 320 
+noise_amplitude_bursting: 160. #Current mean 160
+ratio_exc_inh: 5
+remove_inhibition: 0 #Use 1 to remove inhibition within the RG populations
+remove_silent: true
+rgs_connected: 1 #Use 0 to remove mutual inhibition between the RG populations
+sparsity_rg: 0.03 #Original 0.03
+sparsity_cpg: 0.09 #Original 0.09
+sparsity_mn: 1.
+synaptic_delay: 2.
+w_exc_multiplier: 2 #Use this to change the balance of the network through excitatory weights, Control 2
+#Plot selection
+membrane_potential_plot: 1
+pca_plot: 0
+phase_ordered_plot: 0
+raster_plot: 1
+rate_coded_plot: 1
+spike_distribution_plot: 1
+neuron_V_NaP_I_syn: 0
+#Musculoskeletal simulation parameters
+excitation_file_generation_leg: 0
+excitation_file_generation_arm: 1
+excitation_gain: 0.5

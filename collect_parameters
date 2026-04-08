@@ -1,0 +1,26 @@
+import create_rg as rg
+import create_mnp as mnp
+import create_exc_inter_pop as exc 
+
+rg1 = rg.create_rg_population()
+mnp1 = mnp.create_mnp()
+exc1 = exc.create_exc_inter_population()
+
+def collect_parameters():
+    parameters = {}
+    # Collect parameters from different classes or files
+    parameters['rg_exc_pop_neuron'] = rg1.rg_exc_pop_neuron
+    parameters['rg_exc_neuronparams'] = rg1.rg_exc_neuronparams
+    parameters['dc_generator_rg_exc'] = rg1.dc_generator_rg_exc
+
+
+    parameters['motor_neuron'] = mnp1.motor_neuron
+    parameters['hh_motor_neuroparams'] = mnp1.hh_motor_neuroparams
+
+
+    parameters['exc_inter_neuron'] =  exc1.exc_inter_neuron
+    parameters['hh_exc_int_neuronparams'] =  exc1.hh_exc_int_neuronparams 
+
+  
+    
+    return parameters
